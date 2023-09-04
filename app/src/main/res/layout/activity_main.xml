@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_centerHorizontal="true"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity"
+    android:background="@drawable/elok_bg">
+
+    <ImageView
+        android:id="@+id/elok"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo_elok"
+        android:layout_marginTop="40dp"
+        />
+
+<androidx.cardview.widget.CardView
+    android:id="@+id/login_card"
+    android:layout_below="@+id/elok"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="30dp"
+    android:layout_marginTop="150dp"
+    app:cardCornerRadius="20dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="24dp">
+
+        <EditText
+            android:id="@+id/editTextUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:inputType="text"
+            android:paddingVertical="15dp"
+            android:drawableLeft="@drawable/twotone_account_circle_24"
+            android:drawablePadding="5dp"/>
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextUsername"
+            android:hint="Password"
+            android:paddingVertical="15dp"
+            android:inputType="textPassword"
+            android:drawableLeft="@drawable/twotone_lock_24"
+            android:drawablePadding="5dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextPassword"
+            android:layout_marginTop="26dp"
+            android:backgroundTint="@color/orange"
+            android:text="Login"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="50dp">
+
+        <TextView
+            android:id="@+id/poweredby"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="powered by"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_alignTop="@id/poweredby"
+            android:layout_alignBottom="@+id/poweredby"
+            android:layout_marginHorizontal="10dp"
+            android:layout_toEndOf="@+id/poweredby"
+            android:src="@drawable/ugm_logo" />
+    </RelativeLayout>
+
+</RelativeLayout>
+
